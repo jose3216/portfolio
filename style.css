@@ -1,0 +1,133 @@
+/* Tekst */
+@import url("https://use.typekit.net/tvk3tzh.css");
+
+:root {
+  --bg-color: #f2d3ac;
+  --link-color: #014017;
+  --link-hover-color: #f2f2f2;
+  --color-4: #b2ba95;
+  --color-5: #f2b705;
+
+  --primary-font: "soleil", sans-serif;
+  /* --secondary-font: "bebas-neue-rounded", sans-serif; */
+  --main-text-color: var(--link-color);
+
+  --white-space: 1rem;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  color: var(--link-color);
+  background-color: var(--bg-color);
+}
+h2,
+h3 {
+  font-family: var(--primary-font);
+  color: var(--link-color);
+}
+
+p {
+  font-family: var(--primary-font);
+  color: var(--link-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+nav {
+  background-color: var(--bg-color);
+}
+.nav-link {
+  font-family: var(--primary-font);
+  color: var(--link-color);
+  font-size: 1em;
+  color: var(--link-color);
+}
+.nav-link:hover {
+  font-weight: 600;
+  color: var(--color-4);
+}
+
+.nav-link:focus {
+  text-decoration: underline;
+}
+.splash_pic {
+  transform: scale(0.6) translateX(-210px) translateY(-250px);
+}
+
+.welcome {
+  position: absolute;
+  transform: translateY(-650px);
+  margin-left: 20px;
+}
+.welcome_text {
+  background-color: var(--link-hover-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 50px;
+  letter-spacing: 3px;
+}
+
+#about,
+#portfolio {
+  border: solid 1px var(--link-color);
+}
+
+.who {
+  background-color: var(--bg-color);
+  transform: translateY(-25px);
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.p_navn {
+  transform: rotate(-90deg) translateY(200px) translateX(200px);
+  /* background-color: var(--bg-color); */
+}
+
+.p_birth {
+  margin-left: 50px;
+  margin-right: 215px;
+  transform: rotate(-90deg) translateY(280px) translateX(200px);
+  background-color: var(--bg-color);
+}
+
+#tools {
+  background-color: var(--link-color);
+}
+.tool {
+  color: var(--link-hover-color);
+}
+
+#tools p {
+  color: var(--link-hover-color);
+}
+
+@keyframes kf_arrow {
+  0% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+.arrow {
+  transform: translateY(50px);
+  animation-name: kf_arrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 800px) {
+  .who {
+    background-color: var(--bg-color);
+    transform: translateY(-25px);
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
