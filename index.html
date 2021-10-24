@@ -18,8 +18,8 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="nav justify-content-end">
+      <nav class="fixed-top">
+        <ul class="nav d-flex justify-content-end">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#about"
               >Who am I</a
@@ -41,9 +41,9 @@
       </nav>
     </header>
     <!-- Splash section -->
-    <section class="row">
-      <div class="splash_billede col-12 col-md-6">
-        <img src="tryout.png" alt="" class="splash_pic ps-4 pt-0 mt-0" />
+    <section class="row m-5 p-4">
+      <div class="splash_billede">
+        <img src="tryout.png" alt="" class="col-12 col-md-6" />
         <div class="welcome">
           <p class="welcome_text">Hi,</p>
           <p class="welcome_text">Welcome</p>
@@ -63,69 +63,134 @@
           motivation and I always do my best.
         </p>
       </div>
-      <p class="p_birth">26. April // 1995</p>
-      <p class="p_navn">Jose Hartkopp</p>
+      <p class="p_navn">Jose Hartkopp - 26. April //1995</p>
     </section>
 
     <!-- Tools section -->
-    <section id="tools" class="row pt-5 pb-5">
-      <h2 class="tool text-center">Tools</h2>
+    <section id="tools" class="row p-5">
+      <h2 class="tool text-center">Skills</h2>
       <div class="col-6 col-md-3 d-flex flex-md-column text-center">
         <img src="" alt="" />
         <p class="mt-md-auto">Adobe</p>
+        <p>
+          Illustrator // Photoshop // InDesign // Priemre Pro //Lightingroom //
+          XD
+        </p>
       </div>
       <div class="col-6 col-md-3 d-flex flex-md-column text-center">
         <img src="" alt="" />
-        <p class="mt-md-auto">Adobe</p>
+        <p class="mt-md-auto">Code</p>
+        <p>HTML // CSS // JS // Bootstrap // Wordpress // Divi</p>
       </div>
       <div class="col-6 col-md-3 d-flex flex-md-column text-center">
         <img src="" alt="" />
-        <p class="mt-md-auto">Adobe</p>
+        <p class="mt-md-auto">Working</p>
+        <p>Designthinking //</p>
       </div>
       <div class="col-6 col-md-3 d-flex flex-md-column text-center">
         <img src="" alt="" />
-        <p class="mt-md-auto">Adobe</p>
+        <p class="mt-md-auto">Something more</p>
       </div>
     </section>
 
     <!-- Portfolio section -->
-    <section id="portfolio" class="row text-center">
-      <h1 class="text-center mt-5">Portfolio</h1>
-      <div class="col-12 col-md-6 text-center">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <p>Animationsspil</p>
+    <section id="portfolio" class="row m-4 m-md-5 pb-5 text-center">
+      <h2 class="portfolio_heading text-center mt-5">Portfolio</h2>
+      <div class="col-12 col-md-6 d-md-flex flex-md-column text-center">
+        <img class="projekt_pic" src="animation.png" alt="" />
+        <p class="mb-md-auto">Animationsspil</p>
       </div>
-      <div class="col-12 col-md-6 text-center">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <p>Redesign</p>
+      <div class="col-12 col-md-6 d-md-flex flex-md-column text-center">
+        <img class="projekt_pic" src="loud.png" alt="" />
+        <p class="mb-md-auto">Redesign</p>
       </div>
-      <div class="col-12 col-md-6 text-center">
-        <img src="mewalii_shape.png" alt="" />
-        <img src="" alt="" />
-        <p>CMS</p>
+      <div class="col-12 col-md-6 d-md-flex flex-md-column text-center">
+        <img class="projekt_pic" src="cms.png" alt="" />
+        <p class="mb-md-auto">CMS</p>
       </div>
-      <div class="col-12 col-md-6 text-center">
-        <img src="kapasta.png" alt="" />
-        <img src="" alt="" />
-        <p>Content marketing</p>
+      <div class="col-12 col-md-6 d-md-flex flex-md-column text-center">
+        <img class="projekt_pic" src="content.png" alt="" />
+        <p class="mb-md-auto">Content marketing</p>
       </div>
     </section>
 
     <!-- CV section -->
-    <section id="cv"></section>
+    <section id="cv" class="mt-5 pt-5">
+      <h2 class="text-center mb-4">CV</h2>
+    </section>
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1700">
+      <text class="text01" x="30" y="201">
+        2020 - 2022 //Multimediedesign, KEA
+      </text>
+      <text class="texten text02" x="200" y="412">2017- 2020 //Bachelor</text>
+      <text class="texten text02" x="200" y="436">
+        in sports and health, SDU
+      </text>
+
+      <text class="texten text03" x="30" y="617">2021, July //Promotion</text>
+      <text class="texten text03" x="30" y="641">
+        Assistant Restaurant Manager, Halifax
+      </text>
+
+      <text class="texten text text04" x="230" y="874">
+        2019, Febuary //Waitress, Halifax
+      </text>
+      <text class="texten text text05" x="30" y="1049">
+        2019, one semester //Instructor
+      </text>
+      <text class="texten text05" x="30" y="1073">
+        Qualitative research and methodes, SDU
+      </text>
+      <text class="texten text06" x="240" y="1250">2018 //Voulenteer, URK</text>
+      <text class="texten text07" x="30" y="1405">
+        2010 - 2018 //Sales Assistant, Føtex Greve
+      </text>
+
+      <path
+        id="path"
+        class="theLine"
+        d="M209.05,48.17c123.93,41.85,251,98.22,248,158.09C452.63,296.38,156.83,329.42,157.19,415c.33,80.2,260.21,104.85,268.51,203.81,8.1,96.62-232.63,157.2-222.35,252.41,9.34,86.61,215.77,103.62,217.94,179.79,2.27,79.37-220.15,120.58-215.59,199.43,3.79,65.68,160.89,84.2,161.69,150.91.73,60.63-128.57,82.82-134.74,156.31-3.83,45.5,41.49,87.55,86.23,118.58"
+        fill="none"
+        stroke="white"
+        stroke-width="10px"
+      />
+
+      <circle class="ball ball02" r="20" cx="450" cy="201"></circle>
+      <circle class="ball ball03" r="20" cx="162" cy="412"></circle>
+      <circle class="ball ball04" r="20" cx="421" cy="617"></circle>
+      <circle class="ball ball05" r="20" cx="203" cy="874"></circle>
+      <circle class="ball ball06" r="20" cx="418" cy="1049"></circle>
+      <circle class="ball ball07" r="20" cx="208" cy="1246"></circle>
+      <circle class="ball ball08" r="20" cx="367" cy="1401"></circle>
+    </svg>
 
     <!-- Contact section -->
-    <section id="contact">
-      <img src="" alt="" />
-      <p>E-mail: Jose_hartkopp@live.dk</p>
-      <p>mobil: +45 60685969</p>
+    <section id="contact" class="row m-5 p-4">
+      <h2 class="col-12 text-center">Interested?</h2>
+      <img src="tryout.png" alt="" class="col-12 col-md-6" />
+      <div class="kontakt col-6">
+        <p class="kontakt_text">E-mail: Jose_hartkopp@live.dk</p>
+        <p class="kontakt_text">mobil: +45 60685969</p>
+      </div>
     </section>
+
+    <footer class="p-4 row">
+      <div class="col-6 col-md-8 ms-md-5">
+        <p>Jose Hartkopp</p>
+        <p>E-mail: jose_hartkopp@live.dk</p>
+        <p>Phone: +45 60685969</p>
+      </div>
+      <div class="col-6 col-md-3 d-flex justify-content-end align-items-end">
+        <a href="https://www.linkedin.com/in/jose-hartkopp-410b3158">
+          <img src="linkedin.png" width="50px" height="50px" alt=""
+        /></a>
+      </div>
+    </footer>
 
     <!-- Installeringer fra greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/MotionPathPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
