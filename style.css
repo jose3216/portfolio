@@ -31,6 +31,10 @@ p {
   color: var(--link-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: var(--bg-color);
   overflow-x: hidden;
@@ -77,33 +81,54 @@ nav {
   letter-spacing: 3px;
   margin-bottom: 8px;
 }
+.menu {
+  margin-top: 10rem;
+  visibility: hidden;
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li a {
+  color: var(--link-color);
+  font-size: 2rem;
+  text-decoration: none;
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: var(--color-4);
+}
 
 #about,
-#portfolio,
 #contact {
   border: solid 1px var(--link-color);
 }
 
 .who {
   background-color: var(--bg-color);
-  transform: translateY(-25px);
-  margin-left: 100px;
-  margin-right: 100px;
+  transform: translateY(-1rem);
+  margin-left: 7rem;
+  margin-right: 7rem;
 }
 
 .p_navn {
   background-color: var(--bg-color);
-  margin-left: 50px;
-  margin-right: 180px;
-  transform: rotate(-90deg) translateY(265px) translateX(100px);
-
+  margin-left: 10rem;
+  margin-right: 5rem;
+  transform: rotate(-90deg) translateY(10rem) translateX(7rem);
   font-size: 10px;
   padding: 5px;
 }
 
 #tools {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 30px;
   background-color: var(--link-color);
-  /* transform: skewY(-2deg); */
+  clip-path: polygon(0% 18%, 100% 0%, 100% 85%, 0% 100%);
 }
 .tool {
   color: var(--link-hover-color);
@@ -112,12 +137,6 @@ nav {
   color: var(--link-hover-color);
 }
 
-.portfolio_heading {
-  background-color: var(--bg-color);
-  transform: translateY(-60px);
-  margin-left: 45px;
-  margin-right: 5em;
-}
 .projekt_pic {
   opacity: 65%;
   cursor: pointer;
@@ -128,35 +147,37 @@ nav {
   transform: scale(1.1);
 }
 
-/* CSS CV */
-
-.ball {
-  fill: white;
-  /* visibility: hidden; */
-}
-
-.texten {
-  font-family: var(--primary-font);
-  color: #f2f2f2;
-  /* visibility: hidden; */
-}
-
-/* CSS CV end */
-
 .kontakt {
   position: absolute;
-  transform: translateY(350px);
-  margin-left: 150px;
+  transform: translateY(37rem);
+  margin-left: 7rem;
 }
+
+.kontakt_pic {
+  width: 80%;
+  height: 90%;
+}
+
+.contact_text {
+  padding: 3rem;
+}
+
+.kontakt_heading {
+  background-color: var(--bg-color);
+  transform: translateY(-1.3rem);
+  clip-path: inset(21% 28% 24% 28%);
+  padding: 5px;
+}
+
 .kontakt_text {
   background-color: var(--link-hover-color);
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 20px;
-  padding-right: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   letter-spacing: 3px;
   margin-bottom: 8px;
-  margin-left: -35px;
+  font-size: 12px;
 }
 
 @keyframes kf_arrow {
@@ -181,74 +202,78 @@ footer {
   background-color: var(--color-4);
 }
 
-footer a {
+footer p {
+  font-size: 0.8rem;
 }
 @media only screen and (min-width: 500px) {
-  .kontakt {
-    transform: translateY(400px);
-    margin-left: 170px;
-  }
 }
 
 @media only screen and (min-width: 600px) {
-  .kontakt {
-    transform: translateY(450px);
-    margin-left: 190px;
-  }
-  .p_navn {
-    margin-right: 295px;
-    transform: rotate(-90deg) translateY(374px) translateX(100px);
-  }
 }
 @media only screen and (min-width: 700px) {
-  .kontakt {
-    transform: translateY(500px);
-    margin-left: 250px;
-  }
-
+}
+@media only screen and (min-width: 750px) {
   .p_navn {
-    margin-right: 400px;
-    transform: rotate(-90deg) translateY(479px) translateX(100px);
+    margin-left: 26rem;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .who {
-    background-color: var(--bg-color);
-    transform: translateY(-25px);
-    margin-left: 240px;
-    margin-right: 240px;
+  .menu {
+    visibility: visible;
+    position: relative;
   }
 
-  .p_navn {
-    margin-right: 500px;
-    transform: rotate(-90deg) translateY(577px) translateX(100px);
+  .who {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
-  .kontakt {
-    transform: translateY(600px);
-    margin-left: 200px;
+
+  .kontakt_pic {
+    transform: scaleX(-1);
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .p_navn {
-    margin-right: 600px;
-    transform: rotate(-90deg) translateY(677px) translateX(100px);
-  }
 }
 
 @media only screen and (min-width: 1000px) {
+  .kontakt_pic {
+    width: 30%;
+  }
   .p_navn {
-    margin-left: 90px;
-    margin-right: 700px;
-    transform: rotate(-90deg) translateY(779px) translateX(100px);
+    margin-left: 47rem;
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
+  .who {
+    transform: translateY(-2rem);
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
   .p_navn {
-    margin-left: 90px;
-    margin-right: 1100px;
-    transform: rotate(-90deg) translateY(1177px) translateX(100px);
+    margin-left: 46rem;
+    margin-right: 28rem;
+    transform: rotate(-90deg) translateY(33rem) translateX(7rem);
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .contact_text {
+    padding: 10rem;
+  }
+
+  .kontakt_heading {
+    background-color: var(--bg-color);
+    transform: translateY(-1.8rem);
+    clip-path: inset(10% 40% 10% 40%);
+    padding: 5px;
+  }
+
+  .kontakt {
+    transform: translateY(10rem);
+    margin-left: 10rem;
   }
 }
