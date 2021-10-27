@@ -80,6 +80,7 @@ nav {
   padding-right: 50px;
   letter-spacing: 3px;
   margin-bottom: 8px;
+  transform-origin: 0px 0px;
 }
 .menu {
   margin-top: 10rem;
@@ -209,12 +210,28 @@ footer p {
 }
 
 @media only screen and (min-width: 600px) {
+  .p_navn {
+    margin-left: 16.5rem;
+  }
+
+  .kontakt {
+    transform: translateY(42rem);
+    margin-left: 9rem;
+  }
 }
 @media only screen and (min-width: 700px) {
+  .p_navn {
+    margin-left: 22.5rem;
+  }
 }
 @media only screen and (min-width: 750px) {
   .p_navn {
     margin-left: 26rem;
+  }
+
+  .kontakt {
+    transform: translateY(49rem);
+    margin-left: 13rem;
   }
 }
 
@@ -229,12 +246,26 @@ footer p {
     margin-right: 15rem;
   }
 
+  .p_navn {
+    margin-left: 29rem;
+  }
+
   .kontakt_pic {
     transform: scaleX(-1);
+  }
+
+  .kontakt {
+    transform: translateY(53rem);
   }
 }
 
 @media only screen and (min-width: 900px) {
+  .p_navn {
+    margin-left: 35.5rem;
+  }
+  .kontakt {
+    transform: translateY(60rem);
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -242,7 +273,22 @@ footer p {
     width: 30%;
   }
   .p_navn {
-    margin-left: 47rem;
+    margin-left: 41.6rem;
+  }
+
+  .kontakt {
+    transform: translateY(19rem);
+    margin-left: 28rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .p_navn {
+    margin-left: 54rem;
+  }
+  .kontakt {
+    transform: translateY(23rem);
+    margin-left: 34rem;
   }
 }
 
@@ -273,7 +319,7 @@ footer p {
   }
 
   .kontakt {
-    transform: translateY(10rem);
-    margin-left: 10rem;
+    transform: translateY(27rem);
+    margin-left: 32rem;
   }
 }
